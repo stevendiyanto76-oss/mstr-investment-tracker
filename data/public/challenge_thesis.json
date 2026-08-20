@@ -1,0 +1,364 @@
+{
+  "accretion": {
+    "accretion_score": "0.5304707231060434",
+    "btc_per_adso": "0.002077756901642210396972166885414640272446",
+    "btc_per_adso_change_pct": "0",
+    "btc_per_basic_share": "0.002241554736148598389050645017320893460566",
+    "btc_per_basic_share_change_pct": "0",
+    "comparison_as_of": "2026-07-15T22:28:30+00:00",
+    "disclosure_observations": 5,
+    "prior_btc_per_adso": "0.002077756901642210396972166885414640272446",
+    "prior_btc_per_basic_share": "0.002241554736148598389050645017320893460566",
+    "residual_adso_trend": "stable",
+    "three_update_test": "fail"
+  },
+  "bitcoin_regime": {
+    "change_pct": "6.63",
+    "state": "RECOVERY"
+  },
+  "current": {
+    "as_of": "2026-07-17T22:13:45+00:00",
+    "data_confidence": {
+      "max": "10",
+      "reasons": [
+        "8 of 8 core current inputs are available",
+        "5 comparable corporate disclosure observations are available",
+        "preferred cash yield is 11.4%"
+      ],
+      "score": "10"
+    },
+    "freshness": "fresh",
+    "position_action": "ACCUMULATE",
+    "thesis_state": "INTACT"
+  },
+  "document": {
+    "author": "Steven Diyanto",
+    "doi": "10.5281/zenodo.21331182",
+    "doi_url": "https://doi.org/10.5281/zenodo.21331182",
+    "first_published": "2026-07-13",
+    "information_current_through": "2026-07-11",
+    "language": "English",
+    "subtitle": "An Independent Analysis of Strategy Inc.'s Capital Structure and Common Equity",
+    "title": "MSTR 2026-2030: Beyond the Bitcoin Proxy",
+    "valuation_date": "2026-07-09",
+    "version": "1.0"
+  },
+  "financing": {
+    "condition": "STABLE",
+    "debt_b": "6.754",
+    "funding_stress": "LOW",
+    "issuance_economics": "ACCRETIVE",
+    "preferred_notional_b": "15.464",
+    "preferred_yields": "11.4"
+  },
+  "gates": {
+    "invalidation": {
+      "checks": [
+        {
+          "explanation": "Immediate review threshold from the original thesis.",
+          "name": "Reserve below 12 months",
+          "passed": false,
+          "source": "decision engine fingerprint",
+          "status": "pass",
+          "threshold": "< 12 months",
+          "triggered": false,
+          "value": "20.422182"
+        },
+        {
+          "explanation": "Observed BTC balance reductions across comparable disclosures.",
+          "name": "Obligation-funded BTC sales",
+          "passed": false,
+          "source": "corporate disclosure history",
+          "status": "pass",
+          "threshold": "repeated sales",
+          "triggered": false,
+          "value": "1 REDUCTION"
+        },
+        {
+          "explanation": "Change in the residual enterprise mNAV series.",
+          "name": "Residual value damage",
+          "passed": false,
+          "source": "multi-disclosure trend",
+          "status": "pass",
+          "threshold": "structural deterioration",
+          "triggered": false,
+          "value": "-0.45%"
+        },
+        {
+          "explanation": "Latest comparable BTC per ADSO intervals.",
+          "name": "BTC per ADSO deterioration",
+          "passed": false,
+          "source": "multi-disclosure trend",
+          "status": "pass",
+          "threshold": "repeated deterioration",
+          "triggered": false,
+          "value": "1 DECLINES"
+        },
+        {
+          "explanation": "Compares funded obligations and reserve coverage with the prior disclosure.",
+          "name": "Destructive refinancing",
+          "passed": false,
+          "source": "financing history",
+          "status": "pass",
+          "threshold": "permanent burden increase without compensation",
+          "triggered": false,
+          "value": "CLEAR"
+        }
+      ],
+      "triggered": false
+    },
+    "starter": {
+      "checks": [
+        {
+          "explanation": "Price alone is insufficient.",
+          "name": "MSTR price",
+          "passed": false,
+          "source": "fetch_strategy_snapshot",
+          "status": "fail",
+          "threshold": "<= 85 USD",
+          "value": "94.85"
+        },
+        {
+          "explanation": "Policy reserve divided by modeled annual cash burden.",
+          "name": "Reserve coverage",
+          "passed": true,
+          "source": "decision engine fingerprint",
+          "status": "pass",
+          "threshold": ">= 15 months",
+          "value": "20.422182"
+        },
+        {
+          "explanation": "Compared with the previous comparable disclosure.",
+          "name": "BTC per ADSO",
+          "passed": true,
+          "source": "corporate disclosure history",
+          "status": "pass",
+          "threshold": "stabilizing",
+          "value": "0.002077756901642210396972166885414640272446"
+        },
+        {
+          "explanation": "Risk and liquidity inputs must both be available.",
+          "name": "Risk dashboard",
+          "passed": true,
+          "source": "decision engine scores",
+          "status": "pass",
+          "threshold": "no red indicator",
+          "value": "not red"
+        }
+      ],
+      "eligible": false,
+      "passed": 3,
+      "required": 4
+    },
+    "strategic": {
+      "checks": [
+        {
+          "explanation": "Compares current MSTR price with the dynamic fair price and enterprise mNAV.",
+          "name": "Supportive valuation",
+          "passed": true,
+          "source": "dynamic valuation bridge",
+          "status": "pass",
+          "threshold": "supportive residual valuation",
+          "value": "1.1672018029272193x mNAV"
+        },
+        {
+          "explanation": "5 comparable observations are available.",
+          "name": "BTC per ADSO disclosures",
+          "passed": false,
+          "source": "corporate disclosure history",
+          "status": "fail",
+          "threshold": "3 non-deteriorating updates",
+          "value": "0.002077756901642210396972166885414640272446"
+        },
+        {
+          "explanation": "Strategic gate requires more than 18 months.",
+          "name": "Reserve coverage",
+          "passed": true,
+          "source": "decision engine fingerprint",
+          "status": "pass",
+          "threshold": "> 18 months",
+          "value": "20.422182"
+        },
+        {
+          "explanation": "Blended annual preferred cash burden divided by preferred notional.",
+          "name": "Preferred yields",
+          "passed": true,
+          "source": "preferred cash burden",
+          "status": "pass",
+          "threshold": "normalizing",
+          "value": "11.4%"
+        },
+        {
+          "explanation": "Aggregates every modeled invalidation trigger.",
+          "name": "Invalidation",
+          "passed": true,
+          "source": "invalidation monitor",
+          "status": "pass",
+          "threshold": "no invalidation trigger",
+          "value": "CLEAR"
+        }
+      ],
+      "eligible": false,
+      "passed": 4,
+      "required": 5
+    }
+  },
+  "generated_at": "2026-07-18T08:23:49+00:00",
+  "limitations": [
+    "The original thesis snapshot is not presented as current corporate data.",
+    "A public ledger proves recorded history, not a broker position.",
+    "Corporate metrics use the latest available disclosure until a newer disclosure is recorded."
+  ],
+  "liquidity": {
+    "debt_schedule": [
+      {
+        "amount_b": "1.01",
+        "effective_date": "2027-09-16",
+        "maturity_date": "2028-09-16",
+        "put_date": "2027-09-16"
+      },
+      {
+        "amount_b": "2",
+        "effective_date": "2028-03-02",
+        "maturity_date": "2030-03-02",
+        "put_date": "2028-03-02"
+      },
+      {
+        "amount_b": "1.5",
+        "effective_date": "2028-06-02",
+        "maturity_date": "2029-12-02",
+        "put_date": "2028-06-02"
+      },
+      {
+        "amount_b": "0.60375",
+        "effective_date": "2028-09-16",
+        "maturity_date": "2031-03-16",
+        "put_date": "2028-09-16"
+      },
+      {
+        "amount_b": "0.8",
+        "effective_date": "2028-09-16",
+        "maturity_date": "2030-03-16",
+        "put_date": "2028-09-16"
+      },
+      {
+        "amount_b": "0.8",
+        "effective_date": "2029-06-16",
+        "maturity_date": "2032-06-16",
+        "put_date": "2029-06-16"
+      }
+    ],
+    "liquidity_score": "1",
+    "reserve_coverage_months": "20.422182",
+    "usd_reserve_b": "3.0"
+  },
+  "methodology": {
+    "bitcoin_regime": "available challenge BTC history from first observation to current price",
+    "funding_stress": "reserve coverage and liquidity score",
+    "preferred_yield": "annual preferred cash burden divided by preferred notional",
+    "supportive_valuation": "market price at or below dynamic fair price with enterprise mNAV at or below 1.5x"
+  },
+  "original_rules": {
+    "hard_cap": {
+      "allocation": "3%",
+      "leverage": "prohibited",
+      "source_pages": [
+        5,
+        87,
+        88
+      ]
+    },
+    "invalidation": {
+      "requirements": [
+        "reserve_coverage_lt_12_months",
+        "repeated_obligation_funded_btc_sales",
+        "structural_residual_value_per_adso_damage",
+        "repeated_btc_per_adso_deterioration",
+        "destructive_refinancing_or_dilution"
+      ],
+      "response": "immediate review, reduction, or exit",
+      "source_pages": [
+        10,
+        87,
+        88,
+        91
+      ]
+    },
+    "starter": {
+      "allocation": "1%-2%",
+      "requirements": [
+        "mstr_price_lte_85",
+        "reserve_coverage_gte_15_months",
+        "btc_per_adso_stabilizing",
+        "no_red_dashboard_indicator"
+      ],
+      "source_pages": [
+        5,
+        10,
+        87,
+        88
+      ]
+    },
+    "strategic": {
+      "allocation": "2%-3%",
+      "requirements": [
+        "supportive_valuation",
+        "three_non_deteriorating_bps_disclosures",
+        "reserve_coverage_gt_18_months",
+        "preferred_yields_normalizing",
+        "no_invalidation_trigger"
+      ],
+      "source_pages": [
+        5,
+        10,
+        87,
+        88
+      ]
+    },
+    "stronger_value": {
+      "allocation": "within 3% hard cap",
+      "requirements": [
+        "mstr_price_lte_75",
+        "no_major_red_indicator"
+      ],
+      "source_pages": [
+        5,
+        87,
+        88
+      ]
+    },
+    "tracking": {
+      "allocation": "0%-1%",
+      "requirements": [
+        "monitoring evidence only",
+        "no leverage"
+      ],
+      "source_pages": [
+        5,
+        87,
+        88
+      ]
+    }
+  },
+  "schema_version": 1,
+  "scores": {
+    "accretion": "0.5304707231060434",
+    "liquidity": "1",
+    "risk": "0.41235926611307416"
+  },
+  "source_commit_sha": "2208b5baf9ab8d111252df46a7a29dc3d1743fe8",
+  "valuation": {
+    "accumulate_price": "103.95741902167825",
+    "adso_m": "406.099",
+    "basic_shares_m": "376.424",
+    "btc_holdings": "843775",
+    "btc_price": "63931.09",
+    "enterprise_mnav_estimate": "1.1672018029272193",
+    "fair_price": "116.4982577462353",
+    "hold_price": "129.03909647079234",
+    "mstr_price": "94.85",
+    "reduce_price": "154.12077391990638",
+    "strong_buy_price": "78.87574157256421",
+    "uncertainty_band": "0.1747237353907188"
+  }
+}
